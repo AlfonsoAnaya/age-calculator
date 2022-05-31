@@ -1,0 +1,98 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Signika', sans-serif;
+    letter-spacing: 1px;
+    min-height: 100vh;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  height: 50vh;
+  min-width: 400px;
+  max-width: 400px;
+  min-height: 300px;
+  margin: 0 auto;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  padding: 1em;
+}
+
+.background-normal {
+    background-image: url(images/hourglass.jpg);
+    background-color: rgb(112, 17, 13);
+    background-blend-mode: screen;
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+button,
+input {
+    font-family: inherit;
+    letter-spacing: inherit;
+    max-width: 55%;
+    border: none;
+    margin: 1em;
+    padding: 0.5em 2em;
+    border-radius: 5px;
+}
+
+button {
+    display: block;
+    background: white;
+    color: rgb(34, 34, 34);
+    transition: background-color 500ms;
+}
+
+button:hover {
+    cursor: pointer;
+    background: white(102, 102, 102);
+    opacity: .8;
+    color: black;
+}
+
+
+h1 {
+    margin: 0 0 1em;
+}
+
+.hide {
+    display: none;
+}
+
+p {
+    font-size: 1.25rem;
+}
+
+.background-queen {
+    background-image: linear-gradient(to right,rgb(61, 188, 219) 0%,rgb(224, 34, 34) 100%), url(images/queen.jpg);
+    background-color: rgb(32, 29, 29);
+    background-blend-mode: screen;
+    background-size: cover;
+    background-position: center;
+    color: rgb(14, 22, 1);
+}
+
+.background-greta {
+    background-image: linear-gradient(to right,rgb(153, 241, 131) 0%,rgb(81, 102, 172) 100%), url(images/greta.jpg);
+    background-color: rgb(187, 177, 173);
+    background-blend-mode: overlay;
+    background-size: cover;
+    background-position: center;
+    color: rgb(3, 19, 43);
+}
