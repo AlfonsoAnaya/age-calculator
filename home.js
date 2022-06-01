@@ -24,6 +24,8 @@ btnStart.addEventListener("click", () => {
         in which to append the text to be generated below*/
         const newP = document.createElement("p")
         newP.setAttribute("id", "new-p")
+        const imgCredits = document.createElement("div")
+        newP.setAttribute("class", "credits")
         
         /* Generate text stating:
         1. your age in days, and

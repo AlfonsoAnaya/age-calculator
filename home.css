@@ -80,6 +80,7 @@ p {
 }
 
 .background-queen {
+    /* Photo by Mark de Jong on Unsplash  */
     background-image: linear-gradient(to right,rgb(61, 188, 219) 0%,rgb(224, 34, 34) 100%), url(images/queen.jpg);
     background-color: rgb(32, 29, 29);
     background-blend-mode: screen;
@@ -89,6 +90,7 @@ p {
 }
 
 .background-greta {
+    /* Photo by Carlos Roso on Unsplash */
     background-image: linear-gradient(to right,rgb(153, 241, 131) 0%,rgb(81, 102, 172) 100%), url(images/greta.jpg);
     background-color: rgb(187, 177, 173);
     background-blend-mode: overlay;
