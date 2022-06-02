@@ -8,6 +8,8 @@ const GBD = new Date(2003, 00, 03)
 var today = new Date()
 const QOld = Math.floor((today - QBD)/1000/60/60/24)
 const GOld = Math.floor((today - GBD)/1000/60/60/24)
+const imgCredits = document.createElement("div")
+imgCredits.setAttribute("class", "credits")
 
 btnStart.addEventListener("click", () => {
     /* Ask to pick a valid date 
@@ -24,8 +26,6 @@ btnStart.addEventListener("click", () => {
         in which to append the text to be generated below*/
         const newP = document.createElement("p")
         newP.setAttribute("id", "new-p")
-        const imgCredits = document.createElement("div")
-        newP.setAttribute("class", "credits")
         
         /* Generate text stating:
         1. your age in days, and
@@ -46,6 +46,7 @@ btnStart.addEventListener("click", () => {
         if (randomN === 0) {
             container.classList.toggle("background-queen")
             container.classList.toggle("background-normal")
+            imgCredits.textContent = "Photo by Mark de Jong on Unsplash"
             if (QOld > diff) {
                 var text = document.createTextNode(`You are ${diff} days old! 
                 That is ${QOld - diff} days younger than Queen Elizabeth`)
@@ -56,6 +57,7 @@ btnStart.addEventListener("click", () => {
         } else if (randomN === 1) {
             container.classList.toggle("background-greta")
             container.classList.toggle("background-normal")
+            imgCredits.textContent = "Photo by Carlos Roso on Unsplash"
             if (diff > GOld) {
                 var text = document.createTextNode(`You are ${diff} days old! 
                 That is ${diff - GOld} days older than Greta Thunberg`)
@@ -70,6 +72,8 @@ btnStart.addEventListener("click", () => {
         hiding the initial form and showing the reset button*/
         newP.appendChild(text)
         container.appendChild(newP)
+        console.log(imgCredits)
+        document.body.appendChild(imgCredits)
         btnReset.classList.toggle("hide")
         btnStart.classList.toggle("hide")
         dobLabel.classList.toggle("hide")
@@ -81,6 +85,7 @@ btnStart.addEventListener("click", () => {
 btnReset.addEventListener("click", () => {
     let gone = document.getElementById("new-p")
     container.removeChild(gone)
+    imgCredits.textContent=""
     btnReset.classList.toggle("hide")
     btnStart.classList.toggle("hide")
     dobLabel.classList.toggle("hide")

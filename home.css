@@ -20,10 +20,8 @@ body {
   border-radius: 5px;
   display: flex;
   flex-direction: column;
-  width: 90%;
   height: 50vh;
-  min-width: 400px;
-  max-width: 400px;
+  width: 400px;
   min-height: 300px;
   margin: 0 auto;
   align-items: center;
@@ -97,4 +95,13 @@ p {
     background-size: cover;
     background-position: center;
     color: rgb(3, 19, 43);
+}
+
+.credits {
+    padding-top: .25rem;
+    text-align: right;
+    width: 400px;
+    margin: 0 auto;
+    font-size: .75rem;
+    opacity: .65;
 }
